@@ -2,8 +2,15 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# OpenVIMO videocalling platform
 
-In this tutorial we will go over setting up OpenVIMO locally for a videocalling experiment. This setup can be used to test the platform in a local PC or local network and implement new features before deploying to a production server.
+OpenVIMO is a platform for videocalling built as a covfee task. It's main application is recording of online social interaction such as pair conversations or online meetings. Among its features are:
 
-The tutorial will not directly cover deployment to an online server as the requirements for this setup will depend largely on the network infrastructure of your department. Links will be provided to the appropriate documentation for setting up OpenVIMO in a production server.
+- Different study designs can be specified in Python using a graph structure.
+- Crowdsourcing support through covfee.
+- Videocalls can be timed.
+- Chat with data subjects.
+- Admin can view the videocalls without interferring. Please use responsibly by informing data subjects if you intend to use this feature.
+- Admin can pause, restart or force stop the videocalls.
+
+Open**VIMO** is built on top of Open**VIDU**, an open-source WebRTC framework with an on-premise server that integrates an API for handling calls, a STUN/TURN server and recording capabilities. The OpenVIDU server should be ran separately. To do it, follow [OpenVIDU deployment instructions](https://docs.openvidu.io/en/stable/deployment/ce/on-premises/).
